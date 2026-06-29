@@ -4,58 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campsie TAFE: Friday Conversation Class</title>
+    
+    <!-- Import Fredoka: A super friendly, highly legible, rounded font ideal for learning spaces -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: #bed6c5;
+            font-family: 'Fredoka', sans-serif;
+            /* Replaced the dull green with a cheerful, soft sky-blue */
+            background-color: #eef7ff; 
             margin: 0;
             padding: 40px 20px;
         }
         h1 {
             text-align: center;
-            color: #24292f;
+            /* Friendly deep navy for high readability */
+            color: #1a365d; 
             margin-bottom: 40px;
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 0px #ffffff;
         }
         /* Grid Layout */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 24px;
+            gap: 28px;
             max-width: 1200px;
             margin: 0 auto;
         }
-        /* Card Styling */
+        /* Friendly Card Styling */
         .card {
             background: #ffffff;
-            border: 1px solid #d0d7de;
-            border-radius: 6px;
+            /* Thicker, softer border */
+            border: 3px solid #e2e8f0; 
+            /* Soft, highly rounded corners */
+            border-radius: 20px; 
             padding: 24px;
             text-decoration: none;
-            color: #24292f;
-            transition: transform 0.2s, box-shadow 0.2s;
+            color: #4a5568;
+            /* Smooth, bouncy hover animation */
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             display: flex;
             flex-direction: column;
+            box-shadow: 0 6px 0px #cbd5e1;
         }
+        /* Bouncy Hover Effect with Custom Border Colors */
         .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(140,149,159,0.2);
-            border-color: #0969da;
+            transform: translateY(-6px);
+            box-shadow: 0 12px 0px #c084fc;
+            border-color: #a855f7; /* Vibrant friendly purple accent */
+            background-color: #fdf8ff;
         }
         .card h3 {
-            margin: 0 0 10px 0;
-            color: #0969da;
+            margin: 0 0 12px 0;
+            color: #7c3aed; /* Fun purple for headings */
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.3;
         }
         .card p {
             margin: 0;
-            font-size: 14px;
-            color: #57606a;
+            font-size: 16px;
+            color: #4a5568;
             line-height: 1.5;
+            font-weight: 400;
         }
     </style>
 </head>
 <body>
 
-    <h1>Campsie TAFE: Friday Conversation Class</h1>
+    <h1>🏫 Campsie TAFE: Friday Conversation Class ✨</h1>
 
     <div class="grid-container">
         <!-- Activity 1 -->
