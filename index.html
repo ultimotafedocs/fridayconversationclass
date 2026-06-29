@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project Hub</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #24292f;
+            margin-bottom: 40px;
+        }
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Card Styling */
+        .card {
+            background: #ffffff;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 24px;
+            text-decoration: none;
+            color: #24292f;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(140,149,159,0.2);
+            border-color: #0969da;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            color: #0969da;
+        }
+        .card p {
+            margin: 0;
+            font-size: 14px;
+            color: #57606a;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Project Portfolio</h1>
+
+    <div class="grid-container">
+        <!-- Project 1 -->
+        <a href="https://github.io" class="card" target="_blank">
+            <h3>Project One Name</h3>
+            <p>A brief description of what this index page does, its main features, and tools used.</p>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://github.io" class="card" target="_blank">
+            <h3>Project Two Name</h3>
+            <p>A brief description of what this index page does, its main features, and tools used.</p>
+        </a>
+
+        <!-- Add more cards here following the exact format above -->
+    </div>
+
+</body>
+</html>
